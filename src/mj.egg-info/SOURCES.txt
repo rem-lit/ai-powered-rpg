@@ -1,0 +1,14 @@
+pyproject.toml
+src/mj/__init__.py
+src/mj/__main__.py
+src/mj/cli.py
+src/mj/config.py
+src/mj/dice.py
+src/mj/engine.py
+src/mj/univers.py
+src/mj.egg-info/PKG-INFO
+src/mj.egg-info/SOURCES.txt
+src/mj.egg-info/dependency_links.txt
+src/mj.egg-info/entry_points.txt
+src/mj.egg-info/requires.txt
+src/mj.egg-info/top_level.txt

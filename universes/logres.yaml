@@ -1,0 +1,112 @@
+id: logres
+nom: Logres arthurien
+ton: "Épique et mystérieux, une touche de merveilleux. Honneur, serments, magie ancienne."
+de: d20
+
+stats:            # nom: valeur de départ (modificateur ajouté au jet)
+  vigueur: 2
+  ruse: 1
+  honneur: 3
+  foi: 0
+
+ressources:       # nom: valeurs de départ, min, max
+  pv: {debut: 20, min: 0, max: 20}
+  gloire: {debut: 0, min: 0, max: 100}
+
+seuils_difficulte: {facile: 8, moyen: 12, dur: 16, heroique: 20}
+
+lieux_cles: [Brocéliande, Camelot, Avalon, Tintagel]
+factions: [Chevaliers de la Table ronde, Saxons, Fées, Église]
+
+regles_speciales:
+  - "La magie a toujours un prix."
+  - "Un serment brisé coûte de l'honneur."
+  - "Les Fées ne mentent jamais, mais elles ne disent jamais tout."
+  - "Le fer froid blesse les créatures de l'Autre Monde et les fait fuir."
+
+intro: >-
+  Jeune écuyer, tu portes une lettre scellée de Merlin, à remettre en mains
+  propres au roi Arthur, à Camelot. Trois jours de route, la lisière de
+  Brocéliande à longer, et depuis l'aube une rumeur court les villages :
+  l'enchanteur aurait disparu.
+
+# --- Champs ajoutés par les principes de narration ---
+
+fronts:
+  - nom: La marée saxonne
+    menace: "Les Saxons de Cerdic veulent prendre l'Ouest avant l'hiver."
+    presages:
+      - "Des fermes brûlées de plus en plus près des routes royales."
+      - "Des marchands saxons trop curieux des gués et des ponts."
+      - "Un éclaireur saxon capturé porte une carte des patrouilles de Camelot."
+      - "La garnison du Gué des Corbeaux ne répond plus aux messages."
+  - nom: Le sommeil de Merlin
+    menace: "Sans Merlin, les vieux pactes entre Logres et l'Autre Monde se défont."
+    presages:
+      - "Les sources sacrées se troublent et les puits gèlent en été."
+      - "Des Fées se montrent en plein jour, sans se cacher."
+      - "Les serments prononcés sur l'épée ne lient plus personne."
+      - "Brocéliande s'avance sur les champs, arbre après arbre."
+  - nom: Le fourreau volé
+    menace: "Quelqu'un à Camelot veut un roi vulnérable."
+    presages:
+      - "Arthur saigne d'une égratignure qui aurait dû se refermer."
+      - "Un orfèvre de Camelot disparaît après une commande secrète."
+      - "Un chevalier évite de croiser le regard du roi au banquet."
+
+secrets:          # une phrase chacun, indépendants du lieu
+  - "La lettre de Merlin n'est pas adressée au roi mais à Morgane."
+  - "Merlin a écrit la lettre en sachant qu'il serait enfermé avant qu'elle n'arrive."
+  - "Le fourreau d'Excalibur, qui protège le roi de toute blessure, a été remplacé par une copie."
+  - "Le sénéchal Keu renseigne les Saxons pour se venger d'un affront du roi."
+  - "Un chevalier de la Table ronde a prêté un serment secret à la reine des Fées."
+  - "L'ermite de la lande est un chevalier déclaré mort à la bataille du mont Badon."
+  - "Le fils de Cerdic est retenu comme otage, sous un faux nom, parmi les pages de Camelot."
+  - "Le passeur d'Avalon prend n'importe quel passager, mais chaque traversée lui coûte un souvenir."
+  - "Brocéliande gagne un pas sur les terres des hommes chaque nuit où un serment est rompu."
+  - "L'abbaye de Glastonbury cache un fragment de la lance qui saigne, et l'abbé le sait."
+
+lieux:            # nom évocateur + 3 traits
+  - nom: Le Gué des Corbeaux
+    traits:
+      - "une eau noire qui ne renvoie aucun reflet"
+      - "des pierres levées gravées de noms effacés"
+      - "un fortin de bois dont la porte bat au vent"
+  - nom: L'Auberge du Cerf
+    traits:
+      - "un bois de cerf blanc cloué au-dessus de l'âtre"
+      - "une salle basse où l'on parle bas"
+      - "un aubergiste qui sert d'abord ceux qui paient en argent"
+  - nom: La Chapelle Périlleuse
+    traits:
+      - "des cierges qui brûlent sans jamais raccourcir"
+      - "un autel couvert de suaires"
+      - "une cloche sans battant qui sonne pourtant"
+  - nom: La lisière de Brocéliande
+    traits:
+      - "des chênes si serrés que midi y ressemble au soir"
+      - "une source qui murmure le nom de ceux qui y boivent"
+      - "des rubans votifs noués aux branches basses"
+  - nom: La grand-salle de Camelot
+    traits:
+      - "la Table ronde et ses sièges gravés de noms"
+      - "le Siège périlleux, toujours vide"
+      - "des tapisseries qui sentent la fumée et la cire"
+  - nom: Les falaises de Tintagel
+    traits:
+      - "un vent qui hurle dans les ruines"
+      - "un escalier taillé dans la roche jusqu'à la mer"
+      - "une grotte où la marée découvre des runes"
+
+horloges:         # horloges de départ
+  - {id: h1, nom: "Les Saxons franchissent la Severn", segments: 8, rempli: 2}
+  - {id: h2, nom: "Les vieux pactes se défont", segments: 6, rempli: 1}
+  - {id: h3, nom: "Le roi apprend la vérité sur le fourreau", segments: 6, rempli: 0}
+
+table_evenements: # mots d'inspiration pour les événements aléatoires
+  actions: [trahir, jurer, guérir, maudire, poursuivre, racheter, voler, révéler,
+            défier, protéger, tromper, implorer, brûler, sceller, abandonner,
+            réclamer, ensorceler, venger, pardonner, sacrifier]
+  sujets: [serment, épée, reine, forêt, sang, lettre, Fée, abbaye, otage, brume,
+           corbeau, couronne, source, dette, bannière, gué, cloche, héritier,
+           relique, loup]

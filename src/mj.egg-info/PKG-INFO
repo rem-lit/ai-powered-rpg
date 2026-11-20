@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: mj
+Version: 0.1.0
+Summary: Jeu de rôle narratif solo avec Claude comme maître du jeu
+Requires-Python: >=3.11
+Requires-Dist: anthropic>=2.11
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
